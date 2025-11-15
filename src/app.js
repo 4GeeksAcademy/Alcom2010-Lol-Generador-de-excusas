@@ -19,12 +19,12 @@ let when = ['antes de venir a clase', 'cuando me estaba duchando', 'mientras dor
 
 
 // Función para elegir elemento aleatorio
-function randomword(arr) {
+function RandomWord(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
 // Al cargar la página
 window.addEventListener('DOMContentLoaded', () => {
-  const excuse = `${randomword(who)} ${randomword(action)} ${randomword(what)} ${randomword(when)}.`;
+  const excuse = `${RandomWord(who)} ${RandomWord(action)} ${RandomWord(what)} ${RandomWord(when)}.`;
   document.getElementById('excuse').textContent = excuse;
 });
